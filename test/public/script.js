@@ -1,4 +1,4 @@
-const hostIp = '192.168.29.157'; // Replace with the actual IP address of your server
+const hostIp = '13.228.225.19'; // Replace with the actual IP address of your server
 const socket = io(`http://${hostIp}:3000`);
 let username = localStorage.getItem('username') || '';
 const typingIndicator = document.getElementById('typing-indicator');
