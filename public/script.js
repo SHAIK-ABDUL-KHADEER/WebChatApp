@@ -1,5 +1,5 @@
-const hostIp = '192.168.29.157'; // Replace with the actual IP address of your server
-const socket = io(`http://${hostIp}:3000`);
+const hostDomain = 'webchatapp-shaikabdulkhadeer.onrender.com';
+const socket = io(`https://${hostDomain}`);
 let username = localStorage.getItem('username') || '';
 const typingIndicator = document.getElementById('typing-indicator');
 
