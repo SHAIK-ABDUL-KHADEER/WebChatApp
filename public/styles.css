@@ -1,3 +1,97 @@
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#username-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#username, #room-code-input, #message-input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#room-options button, button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#room-options button:hover, button:hover {
+    background-color: #2980b9;
+}
+
+#messages {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+li {
+    margin: 5px 0;
+}
+
+#chat-container input, #chat-container button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#username-container, #chat-container {
+    text-align: center;
+}
+
+#message-input, #room-code-input {
+    transition: border-color 0.3s ease;
+}
+
+#message-input:focus, #room-code-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#typing-indicator {
+    color: #888;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+footer{
+    text-align: center;
+    color: #888;
+    margin: 50px 50px 50px 50px;
+}
+
+.system-message {
+    color: #888;
+    font-style: italic;
+}
+
+/* Style for disconnect message */
+.system-message.disconnect {
+    color: #e74c3c; /* Red color for disconnect messages */
+} */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
