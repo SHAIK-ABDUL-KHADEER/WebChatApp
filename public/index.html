@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,51 @@
     </div>
     
     <div id="chat-container" class="container" style="display: none;">
+        <button onclick="leaveChat()">Leave Chat</button>
+        <div id="room-options">
+            <button onclick="createRoom()">Create Room</button>
+            <input id="room-code-input" placeholder="Enter Room Code" />
+            <button onclick="joinRoom()">Join Room</button>
+        </div>
+        <ul id="messages"></ul>
+        <input id="message-input" autocomplete="off" />
+        <button onclick="sendMessage()">Send</button>
+        <div id="typing-indicator"></div>
+    </div>
+    <footer>Web Chat Room By SHAIK ABDUL KHADEER</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set Permissions-Policy header for microphone access -->
+    <meta http-equiv="Permissions-Policy" content="microphone=(), camera=()">
+
+    <link rel="stylesheet" href="/styles.css">
+    <title>Web Chat Room</title>
+</head>
+<body>
+    <div id="username-container" class="container">
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" />
+        <button onclick="setUsername()">Set Username</button>
+    </div>
+    
+    <div id="chat-container" class="container" style="display: none;">
+        <!-- Voice chat buttons and audio player -->
+        <button id="startRecording">Start Recording</button>
+        <button id="stopRecording" disabled>Stop Recording</button>
+        <button id="sendVoiceMessage" disabled>Send Voice Message</button>
+        <audio id="audioPlayer" controls style="display: none;"></audio>
+        <div id="recordingIndicator" style="display: none;">Recording...</div>
+
+        <!-- Other chat elements -->
         <button onclick="leaveChat()">Leave Chat</button>
         <div id="room-options">
             <button onclick="createRoom()">Create Room</button>
