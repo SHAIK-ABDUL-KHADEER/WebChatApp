@@ -83,8 +83,8 @@ let mediaRecorder;
 let audioChunks = [];
 let isRecording = false;
 
-const hostDomain = 'localhost';
-const socket = io(`http://${hostDomain}:3000`);
+const hostDomain = 'webchatapp-shaikabdulkhadeer.onrender.com';
+const socket = io(`https://${hostDomain}`);
 let username = localStorage.getItem('username') || '';
 const typingIndicator = document.getElementById('typing-indicator');
 
